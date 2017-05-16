@@ -469,10 +469,10 @@ export default class MapGL extends Component {
     const sizeChanged =
       oldProps.width !== newProps.width || oldProps.height !== newProps.height;
 
-    if (sizeChanged) {
+    // if (sizeChanged) {
       this._map.resize();
-      this._callOnChangeViewport(this._map.transform);
-    }
+      // this._callOnChangeViewport(this._map.transform);
+    // }
   }
 
   // Calculates a new pitch and bearing from a position (coming from an event)
